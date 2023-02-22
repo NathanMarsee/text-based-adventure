@@ -1,7 +1,7 @@
 <body><script language="decker">
 {deck}
 version:1
-card:1
+card:10
 size:[512,342]
 name:"story.html"
 author:"Nathan Marsee"
@@ -16,31 +16,64 @@ image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8
 image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8Arg=="
 {widgets}
 field1:{"type":"field","size":[512,75],"pos":[0,267],"value":"Welcome to the world of Orbellion! \n\nMy name is William Atlas, CEO of the Metratron corporation, but you can call me Will. \nI'm here today to tell you about the wonderful adventure that awaits you here. "}
+button1:{"type":"button","size":[22,13],"pos":[488,327],"script":"Intro1.0","text":"->","style":"invisible"}
+
+{script:Intro1.0}
+on click do
+  go["Intro2"]
+end
+{end}
 
 {card:Intro2}
 image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8Arg=="
 {widgets}
 field1:{"type":"field","size":[512,75],"pos":[0,267],"value":"This world is inhabited by creatures called Hellions, powerful monsters with incredible abilites. But you don't have to be scared of them - you can hold all their power in the palm of your hand with one of my hellion totems. Many people just collect them, but the most popular way people interact with hellions are Orbellion battles!\n\nIn fact, players from around the world compete to determine the greatest hellion master by joining tournaments hosted in nearly every city on the planet. Fame and fortune await anyone who can prove their strength in the championship."}
+button1:{"type":"button","size":[22,13],"pos":[488,327],"script":"Intro2.0","text":"->","style":"invisible"}
+
+{script:Intro2.0}
+on click do
+  go["Intro3"]
+end
+{end}
 
 {card:Intro3}
 {widgets}
 field1:{"type":"field","size":[512,75],"pos":[0,267],"value":"The competition is tough, but I'm willing to bet you have what it takes to be the greatest hellion master this world has ever seen. Take it from me-I  built Metatron from a side project in my parents' garage to the biggest company in the world with nothing but a good idea and willpower.\n\nSo what are you waiting for? When you become the world champ and have all the money and fame you could ever want, I'll meet you personally to say I told you so."}
+button1:{"type":"button","size":[22,13],"pos":[488,327],"script":"Intro3.0","text":"->","style":"invisible"}
+
+{script:Intro3.0}
+on click do
+  go["Home"]
+end
+{end}
 
 {card:Home}
 image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8Arg=="
 {widgets}
 field1:{"type":"field","size":[353,23],"pos":[1,18],"border":0,"style":"plain","scroll":1,"value":"Current Location: The Apartment\n\n"}
 field2:{"type":"field","size":[155,326],"pos":[357,16],"value":"-> You turn off the TV.\n\nThat's the fifth time you've seen that ad since moving-in to your new home in the city. Well, home might not be the right word. \nYour mom finally found a new job, but unfortunately for you, that meant moving away from the house you grew up in and to a small apartment in the biggest city on this side of the continent.\nThough most of your stuff is unpacked, the room still feels somehow empty, lacking the sense of familiarity a room in your home should have. \n\nAnyway, it's about time you left for your first day at your new school. "}
-button1:{"type":"button","size":[60,20],"pos":[367,311],"text":"Stay","style":"invisible"}
-button2:{"type":"button","size":[60,20],"pos":[441,311],"text":"Leave","style":"invisible"}
+button1:{"type":"button","size":[60,20],"pos":[367,311],"script":"Home.0","text":"Stay","style":"invisible"}
+button2:{"type":"button","size":[60,20],"pos":[441,311],"script":"Home.1","text":"Leave","style":"invisible"}
+
+{script:Home.0}
+on click do
+  go["Home1"]
+end
+{end}
+
+{script:Home.1}
+on click do
+  go["Neighborhood"]
+end
+{end}
 
 {card:Home1}
 image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8Arg=="
 {widgets}
 field1:{"type":"field","size":[353,23],"pos":[1,17],"border":0,"style":"plain","value":"Current Location: The Apartment\n\n"}
 field2:{"type":"field","size":[155,326],"pos":[357,16],"value":"-> You decide to stay for a bit longer.\n\n"}
-button1:{"type":"button","size":[60,20],"pos":[367,311],"text":"Stay","style":"invisible"}
-button2:{"type":"button","size":[60,20],"pos":[441,311],"text":"Leave","style":"invisible"}
+button1:{"type":"button","size":[60,20],"pos":[367,311],"script":"Home.0","text":"Stay","style":"invisible"}
+button2:{"type":"button","size":[60,20],"pos":[441,311],"script":"Home.1","text":"Leave","style":"invisible"}
 
 {card:Neighborhood}
 image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8Arg=="
@@ -48,8 +81,8 @@ script:"Neighborhood.0"
 {widgets}
 field1:{"type":"field","size":[353,23],"pos":[1,17],"border":0,"style":"plain","value":"Current Location: Your Neighborhood\n\n"}
 field2:{"type":"field","size":[155,326],"pos":[357,16],"value":"-> You leave the apartment.\n"}
-button1:{"type":"button","size":[60,20],"pos":[367,311],"text":"Go Home","style":"invisible"}
-button2:{"type":"button","size":[60,20],"pos":[441,311],"text":"The City","style":"invisible"}
+button1:{"type":"button","size":[60,20],"pos":[367,311],"script":"Home.0","text":"Go Home","style":"invisible"}
+button2:{"type":"button","size":[60,20],"pos":[441,311],"script":"Neighborhood.1","text":"The City","style":"invisible"}
 
 {script:Neighborhood.0}
 on view do
@@ -57,32 +90,56 @@ on view do
 end
 {end}
 
+{script:Neighborhood.1}
+on click do
+  go["City"]
+end
+{end}
+
 {card:City}
 {widgets}
 field1:{"type":"field","size":[353,23],"pos":[1,17],"border":0,"style":"plain","value":"Current Location: The City\n\n"}
 field2:{"type":"field","size":[155,326],"pos":[357,16],"value":"-> You leave your neighborhood.\n"}
-button1:{"type":"button","size":[60,20],"pos":[367,311],"text":"School","style":"invisible"}
-button2:{"type":"button","size":[60,20],"pos":[441,311],"text":"Shop","style":"invisible"}
-button3:{"type":"button","size":[60,20],"pos":[404,284],"text":"Go Home","style":"invisible"}
+button1:{"type":"button","size":[60,20],"pos":[367,311],"script":"City.0","text":"School","style":"invisible"}
+button2:{"type":"button","size":[60,20],"pos":[441,311],"script":"City.1","text":"Shop","style":"invisible"}
+button3:{"type":"button","size":[60,20],"pos":[404,284],"script":"Home.1","text":"Go Home","style":"invisible"}
+
+{script:City.0}
+on click do
+  go["School(outside)"]
+end
+{end}
+
+{script:City.1}
+on click do
+  go["Shop"]
+end
+{end}
 
 {card:School(outside)}
 {widgets}
 field1:{"type":"field","size":[353,23],"pos":[1,17],"border":0,"style":"plain","value":"Current Location: Outside the School\n\n"}
 field2:{"type":"field","size":[155,326],"pos":[357,16],"value":"-> You arrive at school.\n"}
-button1:{"type":"button","size":[60,20],"pos":[367,311],"text":"Leave","style":"invisible"}
-button2:{"type":"button","size":[60,20],"pos":[441,311],"text":"Go Inside","style":"invisible"}
+button1:{"type":"button","size":[60,20],"pos":[367,311],"script":"Neighborhood.1","text":"Leave","style":"invisible"}
+button2:{"type":"button","size":[60,20],"pos":[441,311],"script":"School(outside).0","text":"Go Inside","style":"invisible"}
+
+{script:School(outside).0}
+on click do
+  go["school(inside)"]
+end
+{end}
 
 {card:school(inside)}
 {widgets}
 field1:{"type":"field","size":[353,23],"pos":[1,17],"border":0,"style":"plain","value":"Current Location: Inside the School\n\n"}
 field2:{"type":"field","size":[155,326],"pos":[357,16],"value":"-> You enter the school.\n"}
-button1:{"type":"button","size":[60,20],"pos":[367,311],"text":"Leave","style":"invisible"}
+button1:{"type":"button","size":[60,20],"pos":[367,311],"script":"City.0","text":"Leave","style":"invisible"}
 
 {card:Shop}
 {widgets}
 field1:{"type":"field","size":[353,23],"pos":[1,17],"border":0,"style":"plain","value":"Current Location: Orbellion Shop\n\n"}
 field2:{"type":"field","size":[155,326],"pos":[357,16],"value":"-> You enter the Orbellion shop.\n"}
-button1:{"type":"button","size":[60,20],"pos":[367,311],"text":"Leave","style":"invisible"}
+button1:{"type":"button","size":[60,20],"pos":[367,311],"script":"Neighborhood.1","text":"Leave","style":"invisible"}
 
 {card:Ending}
 image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wBJAQMA/wD9AQUA/wD7AQYA/wD7AQYA/wD6AQ0A/wDzARMA/wDuARcA/wDpARwA/wDlAQYAAQEYAP8A4QEGAAgBFQD/AN4BBgANARIA/wDcAQUAEgERAP8A2QEFABYBEAD/ANYBBQAZARAA/wDTAQUAHAERAP8AzwEFAB4BEwD/AMsBBQAhARUA/wDFAQYAJAEWAP8AwQEGACcBGAD/ALwBBQAsARcA/wC5AQUAMAEUAP8AuAEFADUBDwD/ALgBBQA5AQsA/wC4AQUAPgEFAP8AuQEFAP8A/AEFAP8A/AEFAP8A/AEFAP8A/AEFAP8A/AEFAP8A/AEFAKABAwD/AFkBBQCfAQUA/wBYAQUAnwEFAP8AWAEFAJ8BBQD/AFgBBQCeAQYA/wBYAQUAngEGAP8AWAEFAJ4BBQD/AFkBBQCeAQUA/wBZAQUAngEFAP8AWQEFAJ4BBQD/AFkBBQCeAQUA/wBZAQUAngEFAP8AWQEFAJ4BBQD/AFkBBQCeAQUA/wBZAQUAngEFAP8AWQEFAJ4BBQD/AFkBBQCeAQUA/wBZAQUAngEFAP8AWQEFAJ4BBQD/AFkBBQCeAQUA/wBZAQUAngEGAP8AWAEFAJ4BBgD/AFgBBQCfAQUA/wBYAQUAnwEFAP8AWAEFAJ8B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/wACAQUA9QEFAP8AAgEFAPUBBQD/AAIBBQD2AQMA/wADAQUA/wD8AQUA/wD8AQUA/wD7AQYA/wD7AQYA/wD7AQUA/wD8AQUA/wD7AQYA/wD7AQYA/wD7AQUA/wDcAQQAGwEGAP8A2wEHABkBBgD/ANsBCgAVAQYA/wDcAQwAEwEGAP8A3QEOAA4BBwD/AOABDgAKAQkA/wDiAR4A/wDmARoA/wDpARcA/wDtARIA/wDxAQ4A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AEQ="
